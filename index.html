@@ -130,25 +130,6 @@
     <!-- Article -->
 
     <article id="article-text">
-        <div class="l--body">
-            <h2>What even is Circular Dichroism Spectroscopy?</h2>
-            <p>It's a laboratory analytic technique that uses a circular dichroism spectrometer to measure the
-                difference between left circularly polarized light and right circularly polarized light in a sample.
-                It's commonly used to find the secondary structure of molecule and other parameters about a sample. You
-                can find more information about it at <a
-                    href="https://chem.libretexts.org/Bookshelves/Physical_and_Theoretical_Chemistry_Textbook_Maps/Supplemental_Modules_(Physical_and_Theoretical_Chemistry)/Spectroscopy/Electronic_Spectroscopy/Circular_Dichroism">
-                    Chemistry Libretexts
-                </a> or you could look for official documentation from JASKO, which is the producer of the equipment we
-                use
-                in our lab.
-            </p>
-            <p>
-                Undergrads who are working on multi-hour lab sessions may not know if
-                their data is correct or not. This tool help students see common errors with concentration, integration
-                time, cuvette size. The voltage chart on the right is a supplement to the data, letting people know
-                where data may or may not be faulty. Detailed instructions will be embedded in this page in the future.
-            </p>
-        </div>
 
         <div class="l--body">
             <h2>How was this made?</h2>
@@ -190,7 +171,7 @@
                 </a>
 
                 <div class="links">
-                    <a href="https://github.com/kaiwen-wang/CD-Spectroscopy">Source on GitHub</a>
+                    <a href="https://github.com/dexter-dean/CD-Spectroscopy">Source on GitHub</a>
                 </div>
             </div>
         </div>
@@ -209,7 +190,7 @@
         labels: labels,
         datasets: [
             {
-                label: '5, 16, 1',
+                label: '5 µg/mL, 16 ms, 1 mm',
                 data: _5ugmL_16msDIT_1mm_data.slice().reverse(),
                 borderColor: Utils.namedColor(0),
                 tension: 0.5,
@@ -222,7 +203,7 @@
         labels: labels,
         datasets: [
             {
-                label: '5, 16, 1',
+                label: '5 µg/mL, 16 ms, 1 mm',
                 data: _5ugmL_16msDIT_1mm_light.slice().reverse(),
                 borderColor: Utils.namedColor(0),
                 tension: 0.5,
