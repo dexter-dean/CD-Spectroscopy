@@ -74,7 +74,7 @@
             </section>
 
             <div class="control ui-concentration">
-                <label for="concentration">Concentration</label>
+                <label for="concentration">Myoglobin Concentration</label>
                 <div class="select">
                     <select id="concentration">
                         <option value="5">5 µg/mL</option>
@@ -85,7 +85,7 @@
             </div>
 
             <div class="control ui-integration">
-                <label for="integration">Integration Time</label>
+                <label for="integration">Data Integration Time</label>
                 <div class="select">
                     <select id="integration">
                         <option value="16">16 ms</option>
@@ -96,7 +96,7 @@
             </div>
 
             <div class="control ui-cuvette">
-                <label for="cuvette">Cuvette Width</label>
+                <label for="cuvette">Path Length (Cuvette Size)</label>
                 <div class="select">
                     <select id="cuvette">
                         <option value="1">1 mm</option>
@@ -134,8 +134,7 @@
         <div class="l--body">
             <h2>How was this made?</h2>
             <p>
-                The data visualization uses <a href="https://www.chartjs.org/">Chart.js</a> to create the CD and voltage
-                graphs. The button logic is just raw Javascript while the CSS formatting comes from <a
+                Data were collected by Dr. Dexter Dean on a Jasco J-1100 CD spectrometer. Data visualization uses <a href="https://www.chartjs.org/">Chart.js</a>. The button logic is just raw Javascript while the CSS formatting comes from <a
                     href="https://playground.tensorflow.org">this open source project</a>. Material Design Lite is used
                 for the button styling.
             </p>
@@ -155,7 +154,7 @@
 
                 <br><br>
 
-                A big thanks goes to Dr. Mary Peek and Dr. Dexter Dean of Georgia Tech's chemistry department for their
+                A big thanks goes to Dr. Mary Peek and Dr. Dexter Dean of Georgia Tech's School of Chemistry and Biochemistry for their
                 help in explaining the theory behind this technique and collecting the data used for this visualization
                 and Dr. Vincent Spezzo as the department manager for CTL.
             </p>
@@ -228,11 +227,6 @@
                         usePointStyle: true
                     }
                 },
-                title: {
-                    display: true,
-                    text: 'CD Chart (Myoglobin)'
-                },
-
             },
             scales: {
                 x: {
@@ -276,11 +270,6 @@
                         usePointStyle: true
                     }
                 },
-                title: {
-                    display: true,
-                    text: 'CD Voltage Charts (Myoglobin)'
-                },
-
             },
             scales: {
                 x: {
